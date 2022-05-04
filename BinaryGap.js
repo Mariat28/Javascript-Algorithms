@@ -30,6 +30,7 @@ function solution(number) {
       }
     }
     console.log(Math.max(...gapsArray));
+    return Math.max(...gapsArray);
 }
 
 solution(12456);
