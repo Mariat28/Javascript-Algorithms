@@ -27,6 +27,6 @@ function solution(arr,K){
   console.log(arr);
   return arr;
 }
-const arr = [3, 8, 9, 7, 6];
+const arr = [];
 const k =3;
 solution(arr,k);
