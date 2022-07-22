@@ -1,6 +1,6 @@
 // implement the function computeClosestToZero(arr) which takes an array of numbers and returns the number that's closest to zero
 // if two numbers are equally close to zero, the positive number must be returned and if the array is empty, return 0
-const testArray = [7, -10, 13, 8, 4, -7, -12, -3, 3, -9, 6, -1, -6, 7];
+const testArray = [7,-10, 13, 8, 4, -7.2,-12,-3.7,3.5,-9.6, 6.5,-1.7, -6.2,7];
 
 function computeClosestToZero(arr) {
   let closestNum = arr[0];
