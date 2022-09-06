@@ -22,11 +22,24 @@ function solution(arr,K){
     for(let i =1; i<=K; i++){
       const lastElement = arr.pop();
       arr.unshift(lastElement);
+      // console.log(arr);
     }
   }
-  console.log(arr);
+  // console.log(arr);
   return arr;
 }
-const arr = [];
-const k =3;
+const arr = [1,2,3,4,5];
+const k =4;
 solution(arr,k);
+function leftRotation(arr, k){
+  if(arr.length > 0){
+    for(let i =0; i<k; i++){
+      const firstElement = arr.shift();
+      arr.push(firstElement);
+      console.log(arr);
+    }
+    return arr;
+
+  }
+}
+leftRotation(arr, k);
