@@ -17,7 +17,32 @@ function turingPrac(ops) {
     // return result;
     
 }
+function validString(string) {
+    let isValid =false;
+    for(let s  of string) {
+        const charIndex= string.indexOf(s);
+        if(s === '(' && string[charIndex+1] === ')'){
+            isValid = true;
+        } else {
+            isValid = false;
+            break;
+        }
+         if(s === '[' && string[charIndex+1] === ']'){
+            isValid = true;
+        }
+        if(s === '{' && string[charIndex+1] === '}'){
+            isValid = true;
+        } 
+
+        
+    }
+    isValid ? console.log('valid') : console.log('invalid')
+    
+}
 const array1 = ["5", "2", "C", "D", "+"];
 const array2 = ["5", "-2", "4", "C", "D", "9", "+", "+"];
+const s = "()[]{}";
+const s2 = "{]]}";
 
 turingPrac(array2)
+validString(s)
